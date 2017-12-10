@@ -41,7 +41,7 @@ _s.find(k1\[0\]) + s.find(k1\[13\]) = 62_
 
 ```python
 func = lambda x,y: t[s.find(x)][0].find(y)
-[func(x,"POR4dny"[i]) for i,x in enumerate("SECCON{")]
+print [func(x,"POR4dny"[i]) for i,x in enumerate("SECCON{")]
 ```
 _\[62, 10, 15, 28, 25, 36, 62\]_
 
@@ -67,7 +67,7 @@ Artık bu bilgiyle bütün şifreyi ters çevirebiliriz.
 key = [62, 10, 15, 28, 25, 36, 62]
 key = (key + key[::-1])*3
 func = lambda x,y: s[s.find(x)-y]
-"".join([func(x,key[i]) for i,x in enumerate("POR4dnyTLHBfwbxAAZhe}}ocZR3Cxcftw9")])
+print "".join([func(x,key[i]) for i,x in enumerate("POR4dnyTLHBfwbxAAZhe}}ocZR3Cxcftw9")])
 ```
 **SECCON{Welc0me_to_SECCON_CTF_2017}**
 
