@@ -31,6 +31,13 @@ For döngüsünün içinde p'nin her bir elemanı için matristen bi eleman seç
 
 ![](sss/3.png)
 
+Matristeki herhangi bi elemanı incelediğimizde, arraydeki bi stringin sırasıyla, elemanın stringteki sırasının toplamının 65 modunda sabit olduğunu görüyoruz. **S**'nin matristen çıkan değeri **P**, 0. sıradaki stringte 62. sırada, 1. sıradaki stringte 61. sırada vs. 0+62=1+61 bu toplamlar 65 modunda hep sabit kalacak. O zaman,
+
+_s.find(k1\[0\])] + s.find(k2\[0\]) = 62_
+
+**k2**, **k1**'in tersi olduğu ve **k1**'in uzunluğu 14 olduğu için, aşağıdaki ilişkiyi çıkarabiliriz.
+
+_s.find(k1\[0\])] + s.find(k1\[13\]) = 62_
 
 
 
