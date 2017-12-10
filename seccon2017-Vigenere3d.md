@@ -71,7 +71,7 @@ func = lambda x,y: s[s.find(x)-y]
 ```
 ***SECCON{Welc0me_to_SECCON_CTF_2017}***
 
-func fonksiyonunda şifredeki elemanın normal yerinden şimdiki yerinin farkını bulduk, bu da bize stringin ne kadar kaydığını verdi, o da plaintextteki elemanın **s**'deki sırasını vermiş oldu.
+func fonksiyonunda şifredeki elemanın normal yerinden şimdiki yerinin farkını bulduk, bu da bize stringin ne kadar kaydığını verdi, o da **p**'deki elemanın **s**'deki sırasını vermiş oldu.
 
 
 
