@@ -39,6 +39,34 @@ _s.find(k1\[0\])] + s.find(k2\[0\]) = 62_
 
 _s.find(k1\[0\])] + s.find(k1\[13\]) = 62_
 
+```python
+func = lambda x,y: t[s.find(x)][0].find(y)
+[func(x,"POR4dny"[i]) for i,x in enumerate("SECCON{")]
+```
+_\[62, 10, 15, 28, 25, 36, 62\]_
+
+Yukarıdaki kodla, geriye kalan 6 toplamı elde ettik.
+
+_s.find(k1\[1\])] + s.find(k1\[12\]) = 10_
+_s.find(k1\[2\])] + s.find(k1\[11\]) = 15_
+                  .
+                  .
+_s.find(k1\[6\])] + s.find(k1\[7\]) = 62_
+
+Bu 7 toplamla, geri kalan 7 toplamı da elde etmiş olduk.
+
+_s.find(k1\[7\])] + s.find(k1\[6\]) = 62_
+_s.find(k1\[6\])] + s.find(k1\[7\]) = 36_
+                  .
+                  .
+_s.find(k1\[13\])] + s.find(k1\[0\]) = 62_
+
+Artık bu bilgiyle bütün şifreyi, aşağıdaki kodla tersine çevirebiliriz.
+
+
+
+
+                  
 
 
 
