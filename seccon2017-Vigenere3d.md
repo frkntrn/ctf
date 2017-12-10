@@ -43,7 +43,7 @@ _s.find(k1\[0\]) + s.find(k1\[13\]) = 62_
 func = lambda x,y: t[s.find(x)][0].find(y)
 [func(x,"POR4dny"[i]) for i,x in enumerate("SECCON{")]
 ```
-**\[62, 10, 15, 28, 25, 36, 62\]**
+_\[62, 10, 15, 28, 25, 36, 62\]_
 
 Yukarıdaki kodla, geriye kalan 6 toplamı elde ettik.
 
