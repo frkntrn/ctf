@@ -69,7 +69,7 @@ key = (key + key[::-1])*3
 func = lambda x,y: s[s.find(x)-y]
 "".join([func(x,key[i]) for i,x in enumerate("POR4dnyTLHBfwbxAAZhe}}ocZR3Cxcftw9")])
 ```
-***SECCON{Welc0me_to_SECCON_CTF_2017}***
+**SECCON{Welc0me_to_SECCON_CTF_2017}**
 
 func fonksiyonunda şifredeki elemanın normal yerinden şimdiki yerinin farkını bulduk, bu da bize stringin ne kadar kaydığını verdi, o da **p**'deki elemanın **s**'deki sırasını vermiş oldu.
 
