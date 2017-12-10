@@ -47,18 +47,18 @@ _\[62, 10, 15, 28, 25, 36, 62\]_
 
 Yukarıdaki kodla, geriye kalan 6 toplamı elde ettik.
 
-_s.find(k1\[1\])] + s.find(k1\[12\]) = 10_ __
-_s.find(k1\[2\])] + s.find(k1\[11\]) = 15_ __
-                  . __
-                  . __
-_s.find(k1\[6\])] + s.find(k1\[7\]) = 62_ 
+_s.find(k1\[1\])] + s.find(k1\[12\]) = 10_ <br/>
+_s.find(k1\[2\])] + s.find(k1\[11\]) = 15_ <br/>
+                  . <br/>
+                  . <br/>
+_s.find(k1\[6\])] + s.find(k1\[7\]) = 62_ <br/>
 
 Bu 7 toplamla, geri kalan 7 toplamı da elde etmiş olduk.
 
-_s.find(k1\[7\])] + s.find(k1\[6\]) = 62_ __
-_s.find(k1\[6\])] + s.find(k1\[7\]) = 36_ __
-                  . __
-                  . __
+_s.find(k1\[7\])] + s.find(k1\[6\]) = 62_ <br/>
+_s.find(k1\[6\])] + s.find(k1\[7\]) = 36_ <br/>
+                  . <br/>
+                  . <br/>
 _s.find(k1\[13\])] + s.find(k1\[0\]) = 62_
 
 Artık bu bilgiyle bütün şifreyi, aşağıdaki kodla tersine çevirebiliriz.
