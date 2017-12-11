@@ -1,6 +1,6 @@
 ![](sss/5.png)
 
-Soruda Simon_96_64 kullanıldığı söylenmiş, yani anahtarın uzunluğu 96, bloğun uzunluğu 64 bit. Yani key'de 96/8=12 karakterden oluşuyo. Bizim sadece 4 hanesini bulmamız lazım. 100 printable karakter var. Brute force saldırısı yapabiliriz. Github'ta simon şifreleri için bi kütüphane [mevcut](https://github.com/inmcm/Simon_Speck_Ciphers/tree/master/Python). Brute force için script yazalım.
+Soruda Simon_96_64 kullanıldığı söylenmiş, yani anahtarın uzunluğu 96, bloğun uzunluğu 64 bit. Yani key'de 96/8=12 karakterden oluşuyo. Bizim sadece 4 hanesini bulmamız lazım. Printable karakterlerle brute force saldırısı yapabiliriz. Github'ta simon şifreleri için bi kütüphane [mevcut](https://github.com/inmcm/Simon_Speck_Ciphers/tree/master/Python). Brute force için script yazalım.
 
 ```python
 import simon, itertools
