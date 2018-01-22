@@ -1,6 +1,6 @@
 ![](sss/4.png)
 
-Bu koddaki fonksiyon, çok fazla tekrarlandığından hata veriyo. Bu yüzden kodu maksimum tekrarlanma derinliğini aşmadan yeniden yazmamız lazım.
+Bu koddaki fonksiyon, çok fazla tekrarlandığından hata veriyor. Bu yüzden kodu maksimum tekrarlanma derinliğini aşmadan yeniden yazmamız lazım.
 
 ``` python
 m=0; n=1
