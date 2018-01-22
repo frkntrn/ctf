@@ -12,13 +12,13 @@ s="abcdef" olduğunda, t matrisinin çıktısı:
 
 ![](sss/2.png)
 
-Stringleri, satır ve sütun değerlerinin toplamının, stringin uzunluğuyla modu kadar döndürüyo. Bu bilgi bi kenarda dursun.
+Stringleri, satır ve sütun değerlerinin toplamının, stringin uzunluğuyla modu kadar döndürüyor. Bu bilgi bi kenarda dursun.
 
 ```python
 print main(sys.argv[1], sys.argv[2], sys.argv[2][::-1])
 ```
 
-Terminalden alınan iki argümandan, 1.si **p**, 2.si **k1** olarak alınıp, 2.sinin tersi de main fonksiyonuna **k2** olarak alınıp, for döngüsünün içine giriyo.
+Terminalden alınan iki argümandan, 1.si **p**, 2.si **k1** olarak alınıp, 2.sinin tersi de main fonksiyonuna **k2** olarak alınıp, for döngüsünün içine giriyor.
 
 ```python
 for a in p:
