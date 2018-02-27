@@ -1,4 +1,4 @@
-![](sss/4.png)
+![](https://github.com/frkntrn/ctf/blob/master/sss/4.png)
 
 Bu koddaki fonksiyon, çok fazla tekrarlandığından hata veriyor. Bu yüzden kodu maksimum tekrarlanma derinliğini aşmadan yeniden yazmamız lazım.
 
