@@ -1,2 +1,2 @@
 # ctf
-writeups
+çözümleri
