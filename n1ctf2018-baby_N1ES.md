@@ -75,7 +75,7 @@ class N1ES:
 ```
 
 Bize bir blok şifreleme şeması olan Feistel ile oluşturulmuş bir şifre verilmiş. Bu şemada şifreleme, deşifrelemeyle aynıdır. Yani şifreli metni ve anahtar listesini, şifreleme algoritmasına verirsek bize açık metni verecek. Ama anahtar listesinin sırasını ters çevirmemiz lazım.
-Bu ![linkteki](https://github.com/frkntrn/kriptanaliz/blob/master/kriptanaliz.md) ilk figürü inceleyebilirsiniz. Diğer verilen dosyaya bakalım.
+Bu [linkteki](https://github.com/frkntrn/kriptanaliz/blob/master/kriptanaliz.md) ilk figürü inceleyebilirsiniz. Diğer verilen dosyaya bakalım.
 
 ```python
 from N1ES import N1ES
