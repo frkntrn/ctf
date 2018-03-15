@@ -27,8 +27,74 @@ plaintext = machine.process_text(ciphertext)
 print(plaintext)
 ```
 
-Soruda eksik olan bölümler **reflector** ve **ring_settings**. </br>
+Soruda eksik olan bölümler **reflector**, **ring_settings** ve **set_display**. </br>
 **reflektörler**: B, C, B-Thin, C-Thin </br>
-**ring ayarları**: 1-26, 1-26, 1-26 </br>
+**ring ayarları**: 1-25, 1-25, 1-25 </br>
+**başlangıç noktası**: A-Z, A-Z, A-Z
 
 Şimdi bu verileri kullanarak bir kaba kuvvet saldırısı yapalım.
+
+```python
+from enigma.machine import EnigmaMachine
+
+def enigma(ref,ring):
+    return EnigmaMachine.from_key_sheet(
+           rotors = 'I II III',
+           reflector = ref, 
+           ring_settings = ring,
+           plugboard_settings = "AV BS CG DL FU HZ IN KM OW RX")
+           
+import itertools, string
+
+refs= ["B", "C", "B-Thin", "C-Thin"]
+rings = itertools.product(range(25),repeat=3)
+inits = map("".join,itertools.product(string.ascii_uppercase,repeat=3))
+
+c = "IPUXZGICZWASMJFGLFVIHCAYEGT"
+p = "HOWDYAGGIESTHEWEATHERISFINE"
+
+def key():
+       for i in refs:
+              for j in rings:
+                     for k in inits:
+                            e = enigma(i,j)
+                            e.set_display(k)
+                            if e.process_text(c) == p:
+                                   return [i,j,k]
+
+print key()
+                                   
+```
+
+**['B', (0, 0, 15), 'HYB']**. Şimdi şifreli metni çözelim.
+
+```python
+c = "LTHCHHBUZODFLJOAFNNAEONXPLDJQVJCZPGAVOLN"
+
+e = enigma("B",(0, 0, 15))
+e.set_display("HYB")
+print e.process_text(c)
+```
+**PASSWORDISGIGEMXHISTORYROCKSLEARNCRYPTOX**
+
+
+
+
+                            
+                     
+
+           
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
