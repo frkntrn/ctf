@@ -1,4 +1,4 @@
-Sorunun adından anlaşılabileceği gibi elimizdeki yüksek olasılıkla xorlanmış çalıştırılabilir bir dosya. Dosyaların son kısımları genelde 0 olduğu için bu bölümden yararlanabiliriz. Dosyanın son 10 satırına bakalım.
+Sorunun adından anlaşılabileceği gibi elimizdeki yüksek olasılıkla xorlanmış çalıştırılabilir bir dosya. Dosyaların son kısımları genelde 0 ağırlıklı olduğu için bu bölümden yararlanabiliriz. Dosyanın son 10 satırına bakalım.
 
 ```bash
 hexdump hexxy | tail -n 10
@@ -35,7 +35,7 @@ Kaydettiğimiz dosyayı çalıştıralım.
 ```bash
 chmod +x bin | ./bin
 ```
-Congrats! You found the flag!
+Congrats! You found the flag!</br>
 **GigEm{NibblerEatsNibbles}**
 
 
