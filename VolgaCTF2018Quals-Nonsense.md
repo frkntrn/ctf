@@ -69,7 +69,7 @@ for _ in range(2):
 ```
 Soruda bize yukarıdaki kod ve imzalar verilmiş, anahtarı bulmamız istenmiş. **LCG** fonksiyonunda ardışık anahtarlar arasındaki doğrusal bağıntı verilmiş, **sign** fonksiyonundaki 3. denklemi ve 2 imza kullanarak anahtarı elde edebiliriz.</br></br>
 ![](https://latex.codecogs.com/gif.latex?s_{1}k=x_{1}r+h_{1}(modq))</br>
-![](https://latex.codecogs.com/gif.latex?s_{2}(ak+b)=x_{2}r+h_{2}(modq))</br></br>
+![](https://latex.codecogs.com/gif.latex?s_{2}(ak+b)=x_{2}r+h_{2}(modq))</br>
 
 **m** ve **q** eşit olduğundan yukarıdaki iki denklemi yazabiliriz. Geriye sadece denklemi çözüp, **x**'i bulmak kaldı.
 
