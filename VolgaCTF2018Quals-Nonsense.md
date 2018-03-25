@@ -67,3 +67,33 @@ for _ in range(2):
 ('VolgaCTF{i7QjVusEQboUz2tPx/Uxkw==}', 158481243947457932495342738131507924205209157088, 260728631055453998945003114392349125641429319965)
 ('VolgaCTF{nQwf/+78QMObu3S3Oh1Olg==}', 117030185689896730023482874167356847173848413476, 645757721193000290408806214518814010431656731046)
 ```
+Soruda bize yukarıdaki kod ve imzalar verilmiş, anahtarı bulmamız istenmiş. **LCG** fonksiyonunda ardışık anahtarlar arasındaki doğrusal bağıntı verilmiş, **sign** fonksiyonundaki 3. denklemi ve 2 imza kullanarak anahtarı elde edebiliriz.</br></br>
+![](https://latex.codecogs.com/gif.latex?s_{1}k=x_{1}r+h_{1}(modq))</br>
+![](https://latex.codecogs.com/gif.latex?s_{2}(ak+b)=x_{2}r+h_{2}(modq))</br></br>
+
+**m** ve **q** eşit olduğundan yukarıdaki iki denklemi yazabiliriz. Geriye sadece denklemi çözüp, **x**'i bulmak kaldı.
+
+```python
+import hashlib
+sayiya_cevir = lambda m: int(hashlib.md5(m).hexdigest(), 16)
+
+h1 = sayiya_cevir('VolgaCTF{nKpV/dmkBeQ0n9Mz0g9eGQ==}'); h2 = sayiya_cevir('VolgaCTF{KtetaQ4YT8PhTL3O4vsfDg==}')
+r1 = 1030409245884476193717141088285092765299686864672 ; r2 = 403903893160663712713225718481237860747338118174
+s1 = 830067187231135666416948244755306407163838542785  ; s2 = 803753330562964683180744246754284061126230157465
+
+a = 3437776292996777467976657547577967657547
+b = 828669865469592426262363475477574643634
+q = 1118817215266473099401489299835945027713635248219
+
+from gmpy import invert
+cozum = ((a*h1*s2 - h2*s1 + b*s1*s2)*invert(r2*s1 - a*r1*s2, q)) % q
+
+print(hex(cozum)[2:])
+```
+**9d529e2da84117fe72a1770a79cec6ece4065212**
+
+
+
+
+
+
