@@ -86,9 +86,9 @@ b = 828669865469592426262363475477574643634
 q = 1118817215266473099401489299835945027713635248219
 
 from gmpy import invert
-cozum = ((a*h1*s2 - h2*s1 + b*s1*s2)*invert(r2*s1 - a*r1*s2, q)) % q
+x = ((a*h1*s2 - h2*s1 + b*s1*s2)*invert(r2*s1 - a*r1*s2, q)) % q
 
-print(hex(cozum)[2:])
+print(hex(x)[2:])
 ```
 **9d529e2da84117fe72a1770a79cec6ece4065212**
 
