@@ -10,3 +10,8 @@ tshark -r pcap.pcap ip.src == 54.175.216.124 | rev | cut -d" " -f3 | rev | cut -
 ```bash
 find . -type f -name "today*" -exec sed -i 's/apple/banana/g' \;
 ```
+
+**tcpflow**
+```bash
+tcpflow -C -r ids_alert.pcap | sed -n "3p" | cut -d":" -f2 > key; tcpflow -C -r ids_alert.pcap | tr `tr "[:upper:]" "[:lower:]" < key``cat key` `python -c 'import string; print string.ascii_letters'` | grep -Eo "INSA{.*}"
+```
