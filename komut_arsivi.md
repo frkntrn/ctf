@@ -31,5 +31,10 @@ openssl rsautl -decrypt -inkey privatekey.pem -in flag.bin -out decrypted.txt -r
 
 **tar**
 ```bash
-tar xvfJ uncle_sam
+tar xvfJ some
+```
+
+**tesseract**
+```bash
+tesseract some.png out
 ```
