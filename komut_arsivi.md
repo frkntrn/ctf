@@ -28,3 +28,8 @@ curl -s --data-urlencode "username=username=data' union select group_concat(conc
 ```bash
 openssl rsautl -decrypt -inkey privatekey.pem -in flag.bin -out decrypted.txt -raw
 ```
+
+**tar**
+```bash
+tar xvfJ uncle_sam
+```
