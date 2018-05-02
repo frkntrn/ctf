@@ -38,3 +38,9 @@ tar xvfJ some
 ```bash
 tesseract some.png out
 ```
+
+**rename**
+```bash
+rename "s/-/ /g" *
+```
+
