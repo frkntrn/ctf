@@ -43,4 +43,7 @@ tesseract some.png out
 ```bash
 rename "s/-/ /g" *
 ```
-
+**env**
+``bash
+PS1="\[\033[01;32m\]\t:\u:\w$\[\033[0m\]"
+```
