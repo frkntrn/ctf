@@ -1,2 +1,2 @@
 # ctf writeups
-![](https://ctftime.org/team/53755)
+![on ctftime](https://ctftime.org/team/53755)
